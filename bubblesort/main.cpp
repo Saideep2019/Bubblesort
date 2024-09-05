@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Function to perform Bubble Sort
+// Bubble Sort Function
 void bubbleSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -28,14 +28,14 @@ int main() {
         cin >> arr[i];
     }
 
-    // Sort the array using Bubble Sort
+    // Sort the array by calling Bubble Sort method
     bubbleSort(arr, n);
 
     // Output: Sorted array with elements separated by space
     for (int i = 0; i < n; i++) {
         cout << arr[i];
         if (i < n - 1) {
-            cout << " ";  // Add a space between elements
+            cout << " ";  
         }
     }
     cout << endl;
