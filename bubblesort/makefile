@@ -1,8 +1,8 @@
-bubblesort : bubblesort.o
-	g++ -Wall -o bubblesort bubblesort.o
+PJ1 : main.o
+	g++ -Wall -o PJ1 main.o
 
-bubblesort.o : bubblesort.cpp
-	g++ -Wall -c bubblesort.cpp
+main.o : main.cpp
+	g++ -Wall -c main.cpp
 
 clean :
-	rm *.o bubblesort
+	rm *.o PJ1
